@@ -16,7 +16,8 @@ jobs:
         run: echo "Hello from GitHub Actions!"
 
       - name: Print Current Date
-        run: echo "Today's date is:$(date)
+        run: |
+          echo "Today's date is: $(date)"
 
       - name: List Files
         run: ls -la
@@ -25,7 +26,9 @@ jobs:
         run: printenv
 
       - name: Print branch name
-        run: echo "Branch:${{ github.ref_name }}"
+        run: |
+          echo "Branch:${{ github.ref_name }}"
 
       - name: Print runner OS
-        run: echo "Running on ${{ runner.os }}"
+        run: |
+          echo "Running on ${{ runner.os }}"
