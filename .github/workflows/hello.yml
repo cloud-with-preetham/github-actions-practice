@@ -12,6 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Intentional Failure
+        run: exit 1
+
       - name: Print Greeting
         run: echo "Hello from GitHub Actions!"
 
