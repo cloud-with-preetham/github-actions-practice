@@ -46,6 +46,6 @@ jobs:
       - name: Print downloaded artifact
         run: |
           echo "Downloaded Files:"
-          ls-la downloaded
+          ls -la downloaded
           echo "---build-report.txt---"
           cat downloaded/build-report.txt
