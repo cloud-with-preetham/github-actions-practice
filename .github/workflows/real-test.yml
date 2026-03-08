@@ -11,7 +11,7 @@ on:
 
 jobs:
   script-test:
-    runs-on:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
