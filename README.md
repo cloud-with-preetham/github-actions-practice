@@ -1,5 +1,7 @@
 # GitHub Actions Practice
 
+![Docker Publish](https://github.com/cloud-with-preetham/github-actions-practice/actions/workflows/docker-publish.yml/badge.svg)
+
 A repository for learning and practicing GitHub Actions workflows and continuous integration concepts.
 
 ## Overview
