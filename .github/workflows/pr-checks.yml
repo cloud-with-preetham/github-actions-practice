@@ -15,7 +15,7 @@ jobs:
 
       - name: Check File Size
         run: |
-          files=$(git diff --name-only origin/main)
+          files=$(git diff --name-only -- origin/main)
           for file in $files; do
             size=$(stat -c%s "$file")
             if [ $size -gt 1048576 ]; then
