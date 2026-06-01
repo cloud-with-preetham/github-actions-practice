@@ -23,5 +23,8 @@ jobs:
       - name: List repository files
         run: ls -la
 
+      - name: Break pipeline intentionally
+        run: exit 1
+
       - name: Print runner operating system
         run: echo "Runner OS is $RUNNER_OS"
